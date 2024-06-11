@@ -1,18 +1,21 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #63B1BC;
+    background-color: #FFF;
     margin: 0;
     padding: 0;
 }
 
 #container {
-    width: 80%;
-    margin: 50px auto;
+   
     text-align: center;
 }
 
 h1 {
     color: #1F2A44;
+}
+
+.teste {
+    height: 15vh;
 }
 
 textarea[type="text"] {
@@ -31,13 +34,14 @@ button {
 }
 
 button {
-    background-color: #ED145B;
+    background-color: rgb(21, 21, 100);
     color: #FFFFFF;
     border: none;
 }
 
 button:hover {
-    background-color: #EFB661;
+    transform: scale(1.15);
+    transition: 1s;
 }
 
 #resposta {
@@ -48,4 +52,66 @@ button:hover {
     border: 1px solid #63666A;
     text-align: left;
     display: none;
+}
+
+
+nav{
+    position: fixed;
+    width: 95%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw 5vw;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    height: 9vh;
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#resposta {
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    height: fit-content;
+}
+
+
+nav img{
+    width: 150px;
+    cursor: pointer;
+}
+
+nav .navigation ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav .navigation ul li{
+    list-style: none;
+    margin-left: 30px;
+}
+
+nav .navigation ul li a{
+    text-decoration: none;
+    color: rgb(21, 21, 100);
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+nav .navigation ul li a:hover{
+    color: black;
+}
+
+.navigation {
+    margin-right: 7vh;
 }
