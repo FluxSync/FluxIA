@@ -10,6 +10,7 @@ require("dotenv").config();
 const app = express();
 const PORTA_SERVIDOR = process.env.PORTA;
 
+
 // configurando o gemini (IA)
 const chatIA = new GoogleGenerativeAI(process.env.MINHA_CHAVE);
 

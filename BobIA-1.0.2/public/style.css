@@ -1,13 +1,25 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #FFF;
     margin: 0;
     padding: 0;
+    background-image: url(468__dan9772.webp);  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #container {
-   
+    margin: 0 auto;
+   background-color: #FFF;
     text-align: center;
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
 
 h1 {
@@ -37,6 +49,7 @@ button {
     background-color: rgb(21, 21, 100);
     color: #FFFFFF;
     border: none;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
 
 button:hover {
@@ -44,21 +57,10 @@ button:hover {
     transition: 1s;
 }
 
-#resposta {
-    margin-top: 20px;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: #D0D3D4;
-    border: 1px solid #63666A;
-    text-align: left;
-    display: none;
-}
-
-
 nav{
     position: fixed;
     width: 95%;
-    background-color: #fff;
+    background-color: rgb(21, 21, 100);;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -73,15 +75,22 @@ nav{
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-top: 15vh; 
 }
 
 #resposta {
     width: 50vw;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     height: 20vh;
     height: fit-content;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #D0D3D4;
+    border: 1px solid #63666A;
+    text-align: left;
 }
 
 
@@ -103,13 +112,13 @@ nav .navigation ul li{
 
 nav .navigation ul li a{
     text-decoration: none;
-    color: rgb(21, 21, 100);
+    color: #FFF;
     font-size: 16px;
     font-weight: 500;
-    transition: 0.3s ease;
+    transition: 0.3s;
 }
 nav .navigation ul li a:hover{
-    color: black;
+    font-size: 20px;
 }
 
 .navigation {
